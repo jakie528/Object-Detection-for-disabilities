@@ -1,3 +1,7 @@
+theme: jekyll-theme-minimal
+title: Yolo5/8 in Indoor and outdoor usage
+description: This is the project webpage for Computer Vision
+
 plugins:
   - jekyll-relative-links
 relative_links:
