@@ -91,7 +91,7 @@ Figure 1: Comparison of object detection by YOLOv5 and YOLOv8 across four sample
 
 [Indoor usage with YOLO] Available here with Colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19zZqunRLepQalh7REmbcu7dlfxJ4yVL0?usp=sharing)
 
-[Smoke Detection with YOLO] Please refer to the config folder and mmyolo's documentation for running train/val configs. Checkpoint file can be provided through email link.
+[Smoke Detection with YOLO] Please refer to the config folder and mmyolo's documentation for running train/val configs. Using mmyolo's inference demo for testing some images.
 
 [Smoke Classification of TileToImage] Please refer to the train_script for training. And then load the ckpt file for inference. Checkpoint file can be provided through email link.
 
