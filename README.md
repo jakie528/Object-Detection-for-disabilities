@@ -2,6 +2,9 @@
 
 Contributors: Ziqi Liao, Xinmiao Xiong, Pin chun Lu, Yi Wen Chen
 
+[Indoor: Electronic Device Detection](#indoor-electronic-device-detection)
+
+[Outdoor: Wildfires project](#outdoor-wildfires-project)
 
 # Indoor: Electronic Device Detection
 
