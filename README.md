@@ -27,7 +27,7 @@ YOLO (You Only Look Once) is a state-of-the-art, real-time object detection algo
 ### Training and the COCO Dataset:
 YOLO models are typically pre-trained on the COCO dataset, a large-scale object detection, segmentation, and captioning dataset. COCO stands for Common Objects in Context and includes over 330K images with 80 object categories, providing a robust foundation for training object detection models.
 
-**Pre-training on COCO**: This involves training the YOLO model on the COCO dataset before it is fine-tuned for specific tasks. This is the one that we have used in the stage of base case.
+**Pre-training on COCO**: This involves training the YOLO model on the COCO dataset before it is fine-tuned for specific tasks. This is the one that we have used in the stage of base case.  
 **Fine-tuning**: After pre-training, YOLO models are often fine-tuned on specific datasets tailored to particular use cases, such as indoor object recognition or wildfire detection. This step adjusts the model's weights to better detect objects relevant to the specific application.
 
 ## Findings  
@@ -41,7 +41,7 @@ YOLO models are typically pre-trained on the COCO dataset, a large-scale object 
 
 ## Setup and Demo
 
-[Indoor usage with YOLO] Code is available here with Colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19zZqunRLepQalh7REmbcu7dlfxJ4yVL0?usp=sharing)
+[Indoor usage with YOLO] Available here with Colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19zZqunRLepQalh7REmbcu7dlfxJ4yVL0?usp=sharing)
 
 # Outdoor: Wildfires project   
  
