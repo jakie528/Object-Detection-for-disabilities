@@ -71,8 +71,8 @@ This table highlights the trade-offs between model complexity, performance, and 
 The detection model is based on YOLOV8. It can produce good false positive rate but missing too many real signals. And it requires more time to compute the possible boxes. --
 ResNet+ViT enable the model to learn the spatial information and can produce better acc at a higher inference speed.
 ## Reference of Dataset:
-The main dataset is [HPWREN]:https://www.hpwren.ucsd.edu/FIgLib
-The mini set is [AI-Humankind]:https://public.roboflow.com/object-detection/wildfire-smoke
+The main dataset is [HPWREN](https://www.hpwren.ucsd.edu/FIgLib)
+The mini set is [AI-Humankind](https://public.roboflow.com/object-detection/wildfire-smoke)
 ## License:
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
