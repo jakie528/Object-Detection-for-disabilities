@@ -34,17 +34,18 @@ YOLO models are typically pre-trained on the COCO dataset, a large-scale object 
 Comparative Performance Analysis of YOLOv5 and YOLOv8 in Object Detection. We used four samples and 1 video to analyze detection and correctness with the detected methods in YOLOv5 and YOLOv8.
 
 ### Photos - 4 samples
-| Model | Sample | Total Objects | Detected Objects | Correct Objects | Correctness Rate (%) | Detection Rate (%) |
-| --- | --- | --- | --- | --- | --- | --- |
-| YOLOv5 | Sample 1 | 4 | 5 | 4 | 100 | 125 |
-| YOLOv8 | Sample 1 | 4 | 4 | 3 | 75 | 100 |
-| YOLOv5 | Sample 2 | 3 | 2 | 2 | 100 | 66.67 |
-| YOLOv8 | Sample 2 | 3 | 3 | 2 | 66.67 | 100 |
-| YOLOv5 | Sample 3 | 5 | 3 | 2 | 40 | 60 |
-| YOLOv8 | Sample 3 | 5 | 6 | 3 | 60 | 120 |
-| YOLOv5 | Sample 4 | 5 | 3 | 3 | 100 | 60 |
-| YOLOv8 | Sample 4 | 5 | 4 | 2 | 40 | 80 |
 
+| Model  | Sample   | Total Objects | Detected Objects | Correct Objects | Correctness Rate (%) | Detection Rate (%) |
+| -----  | ------   | ------------- | ---------------- | --------------- | -------------------- | ------------------ |
+| YOLOv5 | Sample 1 | 4             | 5                | 4               | 100                  | 125                |
+| YOLOv8 | Sample 1 | 4             | 4                | 3               | 75                   | 100                |
+| YOLOv5 | Sample 2 | 3             | 2                | 2               | 100                  | 66.67              |
+| YOLOv8 | Sample 2 | 3             | 3                | 2               | 66.67                | 100                |
+| YOLOv5 | Sample 3 | 5             | 3                | 2               | 40                   | 60                 |
+| YOLOv8 | Sample 3 | 5             | 6                | 3               | 60                   | 120                |
+| YOLOv5 | Sample 4 | 5             | 3                | 3               | 100                  | 60                 |
+| YOLOv8 | Sample 4 | 5             | 4                | 2               | 40                   | 80                 |
+               
 Table 1: Comparative Performance Analysis of YOLOv5 and YOLOv8 in Object Detection.
 
 The analysis evaluates YOLOv5 and YOLOv8's object detection performance across four samples, using metrics like Correctness Rate and Detection Rate. YOLOv5 showed higher accuracy in correctly identifying objects, with particularly strong performance in Samples 1, 2, and 4. In contrast, YOLOv8 detected more objects overall but had more false positives, leading to a lower correctness rate. This suggests YOLOv5 might be better for applications needing precise identification, while YOLOv8 could be useful where capturing as many objects as possible is crucial. Optimizing these models through better training and parameter tuning can enhance their application-specific performance.
