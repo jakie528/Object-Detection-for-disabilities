@@ -8,6 +8,7 @@ a pip or conda requirements file
 ### How to set up the environment
 - [OpenMMLab](https://github.com/open-mmlab): Our detection code uses [MMEngine](https://github.com/open-mmlab/mmengine) and our model is built upon [MMYOLO](https://github.com/open-mmlab/mmyolo).
 - [SmokeyNet](https://arxiv.org/pdf/2112.08598): Our classification model is built upon [SmokeyNet] framework. Please refer to their work of managing the environment.
+- [Indoor usage with YOLO] Code is avalible here with Colab [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19zZqunRLepQalh7REmbcu7dlfxJ4yVL0?usp=sharing) 
 
 ### run a few demos of approaches
 
@@ -15,9 +16,24 @@ a pip or conda requirements file
 
 ### Instructions on how to download and pre-process dataset
 
+# Indoor: Electronic Device Detection 
+## Background
+This section serves as our base case for comparing with the outdoor Wildfires project. To understand how YOLO usage differs between indoor and outdoor scenarios, we have tested indoor scenarios with fixed-angle cameras and first-person views. We have used YOLOv5 and YOLOv8 for this purpose.  
 
-## Wildfires project background
+## Findings
+(1) YOLOv5 provides higher accuracy but does not detect everything in the frame.  
+(2) YOLOv8 provides lower accuracy but detects everything in the frame.  
+(3) Both YOLOv5 and YOLOv8 perform well in indoor detection when the object is at a certain distance and has the right angle with the camera.  
+(4) In first-person view detection, the performance is not as good due to two main reasons:  
+    a. The distance is different from the COCO dataset used for YOLO pre-training.  
+    b. The person wearing the recording glasses is moving, and the movement and changing angles might blur the frame.  
 
+## Setup and Demo
+
+[Indoor usage with YOLO] Code is available here with Colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19zZqunRLepQalh7REmbcu7dlfxJ4yVL0?usp=sharing)
+
+# Outdoor Detection: Wildfires project 
+## Background
 Wildfires are increasing around the globe in frequency, severity, and duration, heightening the need to understand the health effects of wildfire exposure. The risk of wildfires grows in extremely dry conditions, such as drought, heat waves and during high winds.
 With climate change leading to warmer temperatures and drier conditions and the increasing urbanization of rural areas, the fire season is starting earlier and ending later. Wildfire events are getting more extreme in terms of acres burned, duration and intensity, and they can disrupt transportation, communications, water supply, and power and gas services. 
 
