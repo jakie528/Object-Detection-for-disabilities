@@ -32,20 +32,19 @@ We utilized Google Colab and its NVIDIA Tesla T4 GPUs. GPUs are built with CUDA 
 ### Set up YOLOv5 model
 - Setup from the Ultralytics, Command: `git clone https://github.com/ultralytics/yolov5.git`,  and installing the dependencies from `requirements.txt` file.
 - Execute the YOLOv5 object detection model with 'yolov5s.pt' pretrained weights to identify objects in images and videos. `python detect.py --weights yolov5s.pt --img 416 --conf 0.4 --source /content/test_yolo.jpeg`
-  - run the `detect.py`
-  - adjust the image resolution to `416 x 416 pixels` to get a good mix of speed and accuracy.The size must be a multiple of 32. The choice of image size can affect both the speed of the detection process and its accuracy.
-  - set a confidence `threshold at 0.4` to ignore detections that were not very certain.
+  - Run the `detect.py`
+  - Adjust the image resolution to `416 x 416 pixels` to get a good mix of speed and accuracy.The size must be a multiple of 32. The choice of image size can affect both the speed of the detection process and its accuracy.
+  - Set a confidence `threshold at 0.4` to ignore detections that were not very certain.
 
 ### Set up the YOLOv8
 - Installs PyTorch, Torchvision, and specific versions of the Ultralytics packages necessary for running YOLOv8.
   install and import:
-  
-  ```
+```
 !pip install torch torchvision
 !pip install -U ultralytics
 !pip install yolov5
 !pip install ultralytics==8.0.196
-  ```
+```
 
 ### Training and the COCO Dataset:
 YOLO models are typically pre-trained on the COCO dataset, a large-scale object detection, segmentation, and captioning dataset. COCO stands for Common Objects in Context and includes over 330K images with 80 object categories, providing a robust foundation for training object detection models.
