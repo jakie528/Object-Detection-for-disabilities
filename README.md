@@ -21,20 +21,29 @@ a pip or conda requirements file
 
 This section serves as our base case for comparing with the outdoor Wildfires project. To understand how YOLO usage differs between indoor and outdoor scenarios, we have tested indoor scenarios with fixed-angle cameras and first-person views. We have used YOLOv5 and YOLOv8 for this purpose.  
 
+## About YOLO 
+YOLO (You Only Look Once) is a state-of-the-art, real-time object detection algorithm. It treats object detection as a regression problem, using a single neural network to predict bounding boxes and class probabilities directly from full images in one evaluation. This unified architecture enables end-to-end training and real-time speeds while maintaining high average precision.
+
+### Training and the COCO Dataset:
+YOLO models are typically pre-trained on the COCO dataset, a large-scale object detection, segmentation, and captioning dataset. COCO stands for Common Objects in Context and includes over 330K images with 80 object categories, providing a robust foundation for training object detection models.
+
+**Pre-training on COCO**: This involves training the YOLO model on the COCO dataset before it is fine-tuned for specific tasks. This is the one that we have used in the stage of base case.
+**Fine-tuning**: After pre-training, YOLO models are often fine-tuned on specific datasets tailored to particular use cases, such as indoor object recognition or wildfire detection. This step adjusts the model's weights to better detect objects relevant to the specific application.
+
 ## Findings  
 
-(1) YOLOv5 provides higher accuracy but does not detect everything in the frame.  
-(2) YOLOv8 provides lower accuracy but detects everything in the frame.  
-(3) Both YOLOv5 and YOLOv8 perform well in indoor detection when the object is at a certain distance and has the right angle with the camera.  
-(4) In first-person view detection, the performance is not as good due to two main reasons:  
-    a. The distance is different from the COCO dataset used for YOLO pre-training.  
-    b. The person wearing the recording glasses is moving, and the movement and changing angles might blur the frame.  
+- YOLOv5 provides higher accuracy but does not detect everything in the frame.  
+- YOLOv8 provides lower accuracy but detects everything in the frame.  
+- Both YOLOv5 and YOLOv8 perform well in indoor detection when the object is at a certain distance and has the right angle with the camera.  
+- In first-person view detection, the performance is not as good due to two main reasons:  
+   - The distance is different from the COCO dataset used for YOLO pre-training.  
+   - The person wearing the recording glasses is moving, and the movement and changing angles might blur the frame.  
 
 ## Setup and Demo
 
 [Indoor usage with YOLO] Code is available here with Colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19zZqunRLepQalh7REmbcu7dlfxJ4yVL0?usp=sharing)
 
-# Outdoor Detection: Wildfires project   
+# Outdoor: Wildfires project   
  
 ## Background
 Wildfires are increasing around the globe in frequency, severity, and duration, heightening the need to understand the health effects of wildfire exposure. The risk of wildfires grows in extremely dry conditions, such as drought, heat waves and during high winds.
