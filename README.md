@@ -43,6 +43,10 @@ YOLO models are typically pre-trained on the COCO dataset, a large-scale object 
 
 [Indoor usage with YOLO] Available here with Colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19zZqunRLepQalh7REmbcu7dlfxJ4yVL0?usp=sharing)
 
+[Smoke Detection with YOLO] Please refer to the config folder and mmyolo's documentation for running train/val configs. Checkpoint file can be provided through email link.
+
+[Smoke Classification of TileToImage] Please refer to the train_script for training. And then load the ckpt file for inference. Checkpoint file can be provided through email link.
+
 # Outdoor: Wildfires project   
  
 ## Background
