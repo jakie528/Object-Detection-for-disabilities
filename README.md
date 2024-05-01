@@ -6,7 +6,8 @@ Contributors: Ziqi Liao, Xinmiao Xiong, Pin chun Lu, Yi Wen Chen
 a pip or conda requirements file
 
 ### How to set up the environment
-a pip or conda requirements file ... 
+- [OpenMMLab](https://github.com/open-mmlab): Our detection code uses [MMEngine](https://github.com/open-mmlab/mmengine) and our model is built upon [MMYOLO](https://github.com/open-mmlab/mmyolo).
+- [SmokeyNet](https://arxiv.org/pdf/2112.08598): Our classification model is built upon [SmokeyNet] framework. Please refer to their work of managing the environment.
 
 ### run a few demos of approaches
 
