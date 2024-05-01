@@ -36,7 +36,7 @@ Comparative Performance Analysis of YOLOv5 and YOLOv8 in Object Detection. We us
 ### Photos - 4 samples
 
 | Model  | Sample   | Total Objects | Detected Objects | Correct Objects | Correctness Rate (%) | Detection Rate (%) |
-| -----  | ------   | ------------- | ---------------- | --------------- | -------------------- | ------------------ |
+|--------|----------|---------------|------------------|-----------------|----------------------|--------------------|
 | YOLOv5 | Sample 1 | 4             | 5                | 4               | 100                  | 125                |
 | YOLOv8 | Sample 1 | 4             | 4                | 3               | 75                   | 100                |
 | YOLOv5 | Sample 2 | 3             | 2                | 2               | 100                  | 66.67              |
