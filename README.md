@@ -1,11 +1,29 @@
 # Yolo5/8 in Indoor and outdoor usage
 
 Contributors: Ziqi Liao, Xinmiao Xiong, Pin chun Lu, Yi Wen Chen
-
-[Indoor: Electronic Device Detection](#indoor-electronic-device-detection)
-
-[Outdoor: Wildfires project](#outdoor-wildfires-project)
-
+### [Indoor: Electronic Device Detection](#indoor-electronic-device-detection)
+ - [Background](#background)
+ - [About YOLO](#about-yolo)
+ - [Dataset Preparation](#dataset-preparation)
+ - [Environment Set Up](#environment-set-up)
+     - [Set up YOLOv5 model](#set-up-yolov5-model)
+     - [Set up the YOLOv8](#set-up-the-yolov8)
+ - [Model Training and Result](#model-training-and-result)
+     - [Four Samples of Photo](#four-samples-of-photo)
+     - [Analysis of a Video](#analysis-of-a-video)
+     - [Findings](#findings)
+### [Outdoor: Wildfires project](#outdoor-wildfires-project)
+ - [Background](#background)
+ - [Motivation](#motivation)
+ - [Setup and Demo](#setup-and-demo)
+ - [Methodology (method, data, evaluation metrics)](#methodology-method-data-evaluation-metrics)
+ - [Models Evaluated](#models-evaluated)
+ - [Performance Metrics](#performance-metrics)
+ - [Detailed Performance Table](#detailed-performance-table)
+### [Summary](#summary)
+### [Discussion](#discussion)
+### [Reference of Dataset](#reference-of-dataset)
+### [Reference](#reference)
 # Indoor: Electronic Device Detection
 
 ## Background
@@ -65,7 +83,7 @@ In each sample picture, we first count the total number of objects that are actu
 ```
 
 
-### Photos - 4 samples
+### Four Samples of Photo
 
 | Model  | Sample   | Total Objects | Detected Objects | Correctly Identified Objects | Correctness Rate (%) | Detection Rate (%) |
 |--------|----------|---------------|------------------|-----------------|----------------------|--------------------|
@@ -87,11 +105,15 @@ The analysis evaluates YOLOv5 and YOLOv8's object detection performance across f
 ![](/assets/sample3_4.jpg)
 Figure 1: Comparison of object detection by YOLOv5 and YOLOv8 across four samples, highlighting differences in sensitivity and precision.
 
-<video src="/assets/video1yolov5.mp4" width="320" height="240" controls></video>
+In Figure 1, the comparison between YOLOv5 and YOLOv8 shows different results in object detection. YOLOv5 was more confident in detecting the cellphone than YOLOv8. Both models had trouble with objects that were partly hidden, like a cellphone behind a bottle. YOLOv8 often was too confident, which led to mistakes, such as seeing a window frame as a microwave.
 
-<video src="/assets/videoyolov8.avi" width="320" height="240" controls></video>
+### Analysis of a Video
 
-In our analysis of video using YOLOv5 and YOLOv8, the focus is on detecting cellphones. YOLOv5 processes frames quickly (10-20 milliseconds per frame) but often misidentifies objects. For example, it confuses computer screens with TVs and laptops with books or keyboards. On the other hand, YOLOv8, although slightly slower (10-30 milliseconds per frame), demonstrates greater accuracy in detecting a broader range of objects, including cellphones and laptops. Both models incorrectly identifies EarPods as mice. This shows that while YOLOv5 and YOLOv8 excel in detecting trained objects like cellphones, they still mislabel items outside their training parameters.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z3IZJkl2oLQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wAIl1PNzeRU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+In our analysis of video using YOLOv5 and YOLOv8, the focus is on detecting cellphones. YOLOv5 processes frames quickly (10-20 milliseconds per frame) but often misidentifies objects. For example, it confuses computer screens with TVs and laptops with books or keyboards. On the other hand, YOLOv8, although slightly slower (10-30 milliseconds per frame), demonstrates greater accuracy in detecting a broader range of objects, including cellphones and laptops. Both models incorrectly identify EarPods as mice. This shows that while YOLOv5 and YOLOv8 excel in detecting trained objects like cell phones, they still mislabel items outside their training parameters.
 
 ## Findings
 
@@ -163,16 +185,19 @@ This table highlights the trade-offs between model complexity, performance, and 
 ## Discussion
 The detection model is based on YOLOV8. It can produce good false positive rate but missing too many real signals. And it requires more time to compute the possible boxes. --
 ResNet+ViT enable the model to learn the spatial information and can produce better acc at a higher inference speed.
+
 ## Reference of Dataset
 The main dataset is [HPWREN](https://www.hpwren.ucsd.edu/FIgLib).
 The mini set is [AI-Humankind](https://public.roboflow.com/object-detection/wildfire-smoke).
 
+
 # Reference
 [1] ultralytics/yolov5: v7.0 - YOLOv5 SOTA Realtime Instance Segmentation. (2022, November 23). Zenodo. https://doi.org/10.5281/zenodo.7347926
 
+[Back to Top](#yolo58-in-indoor-and-outdoor-usage)
 
+<hr>
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
 <br />
 This work is under the <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>
-
 
