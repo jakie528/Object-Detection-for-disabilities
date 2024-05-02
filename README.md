@@ -46,7 +46,13 @@ We utilized Google Colab and its NVIDIA Tesla T4 GPUs. GPUs are built with CUDA 
 ~~**Fine-tuning:** After pre-training, YOLO models are often fine-tuned on specific datasets tailored to particular use cases, such as indoor object recognition or wildfire detection. This step adjusts the model's weights to better detect objects relevant to the specific application.~~
 
 ## Model Training and Result
-Comparative Performance Analysis of YOLOv5 and YOLOv8 in Object Detection. We used 4 samples and 1 video to analyze detection and correctness with the detected methods in YOLOv5 and YOLOv8.
+We selected four diverse samples and a video that would mimic real-world variability. we utilized pre-trained models from Ultralytics. Samples and a video as sources are put in the pre-trained model in the YOLOv5 and YOLOv8 separately. Then we conducted comparative performance analysis of YOLOv5 and YOLOv8 in Object Detection.
+
+In each sample picture, we first count the total number of objects that are actually there and called as "Total Objects". Next, we see how many objects the model identifies and called them as "Detected Objects". We also count how many of these detected objects are coorectly identified, nameing them "Correctly Identified Objects". To measure how accurate the model is, we use two rates: the correctness rate and the detection rate. 
+ 1. `correctness rate (%) = Correctly Identified Objects / Total Objects in the Photo * 100`
+ 2. `detection rate(%) = Detected Objects / Total Objects in the Photo * 100`
+
+ These calculations help us understand how well the model works in identifying and detecting objects in photos.
 ```
 |- ..
 |- yolo5/
@@ -61,7 +67,7 @@ Comparative Performance Analysis of YOLOv5 and YOLOv8 in Object Detection. We us
 
 ### Photos - 4 samples
 
-| Model  | Sample   | Total Objects | Detected Objects | Correct Objects | Correctness Rate (%) | Detection Rate (%) |
+| Model  | Sample   | Total Objects | Detected Objects | Correctly Identified Objects | Correctness Rate (%) | Detection Rate (%) |
 |--------|----------|---------------|------------------|-----------------|----------------------|--------------------|
 | YOLOv5 | Sample 1 | 4             | 5                | 4               | 100                  | 125                |
 | YOLOv8 | Sample 1 | 4             | 4                | 3               | 75                   | 100                |
@@ -81,6 +87,11 @@ The analysis evaluates YOLOv5 and YOLOv8's object detection performance across f
 ![](/assets/sample3_4.jpg)
 Figure 1: Comparison of object detection by YOLOv5 and YOLOv8 across four samples, highlighting differences in sensitivity and precision.
 
+<video src="/assets/video1yolov5.mp4" width="320" height="240" controls></video>
+
+<video src="/assets/videoyolov8.avi" width="320" height="240" controls></video>
+
+In our analysis of video using YOLOv5 and YOLOv8, the focus is on detecting cellphones. YOLOv5 processes frames quickly (10-20 milliseconds per frame) but often misidentifies objects. For example, it confuses computer screens with TVs and laptops with books or keyboards. On the other hand, YOLOv8, although slightly slower (10-30 milliseconds per frame), demonstrates greater accuracy in detecting a broader range of objects, including cellphones and laptops. Both models incorrectly identifies EarPods as mice. This shows that while YOLOv5 and YOLOv8 excel in detecting trained objects like cellphones, they still mislabel items outside their training parameters.
 
 ## Findings
 
