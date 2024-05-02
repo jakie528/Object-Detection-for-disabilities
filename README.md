@@ -148,9 +148,10 @@ With climate change leading to warmer temperatures and drier conditions and the 
 
 ## Setup and Demo
 [SmokeyNet](https://arxiv.org/pdf/2112.08598): Our classification model is built upon [SmokeyNet] framework. Please refer to their work of managing the environment.
+
 [Smoke Detection with YOLO] Please refer to the config folder and mmyolo's documentation for running train/val configs. Using mmyolo's inference demo for testing some images.
 ```python
-smoke_config = ',/mmyolo/configs/yolov8/_yolov8_l_no_mask_frozen.py'
+smoke_config = './mmyolo/configs/yolov8/_yolov8_l_no_mask_frozen.py'
 best_pth = './best_coco_bbox_mAP_epoch_100.pth'
 !python ./mmyolo/demo/image_demo.py ./test_images \
                           {smoke_config} \
@@ -159,6 +160,7 @@ best_pth = './best_coco_bbox_mAP_epoch_100.pth'
                           --score-thr 0.2 \
                           --to-labelme
 ```
+
 [Smoke Classification of TileToImage] Please refer to the train_script for training. And then load the ckpt file for inference. Checkpoint file can be provided through email link.
 
 ## Methodology (method, data, evaluation metrics)
