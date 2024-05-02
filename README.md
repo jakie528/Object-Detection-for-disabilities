@@ -72,11 +72,17 @@ We utilized Google Colab and its NVIDIA Tesla T4 GPUs. GPUs are built with CUDA 
 ## Model Training and Result
 We selected four diverse samples and a video that would mimic real-world variability. we utilized pre-trained models from Ultralytics. Samples and a video as sources are put in the pre-trained model in the YOLOv5 and YOLOv8 separately. Then we conducted comparative performance analysis of YOLOv5 and YOLOv8 in Object Detection.
 
-In each sample picture, we first count the total number of objects that are actually there and called as "Total Objects". Next, we see how many objects the model identifies and called them as "Detected Objects". We also count how many of these detected objects are coorectly identified, nameing them "Correctly Identified Objects". To measure how accurate the model is, we use two rates: the correctness rate and the detection rate. 
- 1. `correctness rate (%) = Correctly Identified Objects / Total Objects in the Photo * 100`
- 2. `detection rate(%) = Detected Objects / Total Objects in the Photo * 100`
+In each sample picture, we first count the total number of objects, called "Total Objects." Next, we see how many objects the model identifies and calls them "Detected Objects." We also count how many detected objects are correctly identified, naming them "Correctly Identified Objects." To measure the model's accuracy, we use the correctness and detection rates, where the unit is a percentage (%). The formula is below:
 
- These calculations help us understand how well the model works in identifying and detecting objects in photos.
+$$
+\text{Correctness Rate} = \frac{\text{Correctly Identified Objects}}{\text{Total Objects in the Photo}} \times 100
+$$
+
+$$
+\text{Detection Rate} = \frac{\text{Detected Objects}}{\text{Total Objects in the Photo}} \times 100
+$$
+
+These numbers show how well each model identifies and detects objects in photos. Below is the file structure in the `/content` directory of the Colab notebook:
 ```
 |- ..
 |- yolo5/
@@ -87,7 +93,6 @@ In each sample picture, we first count the total number of objects that are actu
 |- sample4.jpg
 |- video1.MOV
 ```
-
 
 ### Four Samples of Photo
 
