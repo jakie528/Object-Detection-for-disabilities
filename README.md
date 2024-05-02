@@ -2,6 +2,7 @@
 
 Contributors: Ziqi Liao, Xinmiao Xiong, Pin chun Lu, Yi Wen Chen
 ### [Indoor: Electronic Device Detection](#indoor-electronic-device-detection)
+
  - [Background](#background)
  - [About YOLO](#about-yolo)
  - [Dataset Preparation](#dataset-preparation)
@@ -12,6 +13,7 @@ Contributors: Ziqi Liao, Xinmiao Xiong, Pin chun Lu, Yi Wen Chen
      - [Four Samples of Photo](#four-samples-of-photo)
      - [Analysis of a Video](#analysis-of-a-video)
      - [Findings](#findings)
+
 ### [Outdoor: Wildfires project](#outdoor-wildfires-project)
  - [Background](#background)
  - [Motivation](#motivation)
@@ -20,9 +22,13 @@ Contributors: Ziqi Liao, Xinmiao Xiong, Pin chun Lu, Yi Wen Chen
  - [Models Evaluated](#models-evaluated)
  - [Performance Metrics](#performance-metrics)
  - [Detailed Performance Table](#detailed-performance-table)
+
 ### [Summary](#summary)
+
 ### [Discussion](#discussion)
+
 ### [Reference of Dataset](#reference-of-dataset)
+
 ### [Reference](#reference)
 # Indoor: Electronic Device Detection
 
