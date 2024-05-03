@@ -2,6 +2,10 @@
 
 Contributors: Ziqi Liao, Xinmiao Xiong, Pin Chun Lu, Yi Wen Chen
 
+# Links
+1. [Link to presentation slides](https://github.com/jakie528/Yolo5-8-in-Indoor-and-outdoor-usage/blob/main/Visual_Detection_CS766.pdf)
+2. [Link to github repository](https://github.com/jakie528/Yolo5-8-in-Indoor-and-outdoor-usage) 
+
 ### [Indoor: Electronic Device Detection](#indoor-electronic-device-detection)
 
  - [Background](#background)
@@ -212,10 +216,6 @@ ResNet+ViT enable the model to learn the spatial information and can produce bet
 ## Reference of Dataset
 The main dataset is [HPWREN](https://www.hpwren.ucsd.edu/FIgLib).
 The mini set is [AI-Humankind](https://public.roboflow.com/object-detection/wildfire-smoke).
-
-# Links
-1. [Link to presentation slides](https://github.com/jakie528/Yolo5-8-in-Indoor-and-outdoor-usage/blob/main/Visual_Detection_CS766.pdf)
-2. [Link to github repository](https://github.com/jakie528/Yolo5-8-in-Indoor-and-outdoor-usage) 
 
 # Repository Structure
 ```
