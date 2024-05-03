@@ -33,7 +33,6 @@ Contributors: Ziqi Liao, Xinmiao Xiong, Pin Chun Lu, Yi Wen Chen
 ### [Discussion](#discussion)
 
 ### [Reference of Dataset](#reference-of-dataset)
-## [Links](#links)
 ## [Repository Structure](#repository-structure)
 ## [Reference](#reference)
 # Indoor: Electronic Device Detection
