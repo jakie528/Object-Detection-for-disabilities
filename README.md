@@ -2,7 +2,6 @@
 
 Contributors: Ziqi Liao, Xinmiao Xiong, Pin Chun Lu, Yi Wen Chen
 
-# Links
 1. [Link to presentation slides](https://github.com/jakie528/Yolo5-8-in-Indoor-and-outdoor-usage/blob/main/Visual_Detection_CS766.pdf)
 2. [Link to github repository](https://github.com/jakie528/Yolo5-8-in-Indoor-and-outdoor-usage) 
 
