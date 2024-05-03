@@ -235,7 +235,7 @@ The mini set is [AI-Humankind](https://public.roboflow.com/object-detection/wild
 │   └── sample_log_for_detection.ipynb                              # mmyolo
 ├── smoke_detection.mp4
 ├── src/                                                            # Indoor: source of images and videos
-└── ultralytics_yolo.ipynb                                          # Indoor: implementation of object detection
+└── yolo_v5_v8.ipynb                                                # Indoor: implementation of object detection
 ```
 
 # Reference
