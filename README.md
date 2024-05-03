@@ -69,8 +69,6 @@ We utilized Google Colab and its NVIDIA Tesla T4 GPUs. GPUs are built with CUDA 
 
 **Pre-training on COCO:** This involves training the YOLO model on the COCO dataset before it is fine-tuned for specific tasks. This is the one that we have used in the stage of base case.
 
-~~**Fine-tuning:** After pre-training, YOLO models are often fine-tuned on specific datasets tailored to particular use cases, such as indoor object recognition or wildfire detection. This step adjusts the model's weights to better detect objects relevant to the specific application.~~
-
 ## Model Training and Result
 We selected four diverse samples and a video that would mimic real-world variability. we utilized pre-trained models from Ultralytics. Samples and a video as sources are put in the pre-trained model in the YOLOv5 and YOLOv8 separately. Then we conducted comparative performance analysis of YOLOv5 and YOLOv8 in Object Detection.
 
