@@ -227,15 +227,15 @@ The mini set is [AI-Humankind](https://public.roboflow.com/object-detection/wild
 ├── _config.yml                                                     # Jekyll settings
 ├── _layouts/                                                       # Jekyll settings
 ├── assets/                                                         # Indoor: object prediction
-├── configs/                                                        
+├── configs/                                                        # config file for running train/val pipeline in mmyolo
 │   ├── _yolov8_l_no_mask_frozen.py                                 
 │   ├── _yolov8_l_unfrozen_smoke.py                                 
 │   └── _yolov8_s_no_mask_frozen.py                                 
-├── logs_for_smoke/                                                 
-│   ├── events.out.tfevents.1713544764.elab-vulcan.149005.0         # 
-│   ├── events.out.tfevents.1713580307.elab-vulcan.149005.1         #
-│   ├── image_preds.csv
-│   └── sample_log_for_detection.ipynb
+├── logs_for_smoke/                                                 # tensorboard record + image_prediction_result for classification + result/visualize_for_mmyolo
+│   ├── events.out.tfevents.1713544764.elab-vulcan.149005.0         # tfevent: classification
+│   ├── events.out.tfevents.1713580307.elab-vulcan.149005.1         # tfevent: classification
+│   ├── image_preds.csv                                             # classification
+│   └── sample_log_for_detection.ipynb                              # mmyolo
 ├── smoke_detection.mp4
 ├── src/                                                            # Indoor: source of images and videos
 └── ultralytics_yolo.ipynb                                          # Indoor: implementation of object detection
