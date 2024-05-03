@@ -1,6 +1,9 @@
-# Yolo5/8 in Indoor and outdoor usage
+# Comparative Analysis of YOLOv5 and YOLOv8 for Indoor and Outdoor Object Detection
 
 Contributors: Ziqi Liao, Xinmiao Xiong, Pin Chun Lu, Yi Wen Chen
+
+1. [Link to presentation slides](https://github.com/jakie528/Yolo5-8-in-Indoor-and-outdoor-usage/blob/main/Visual_Detection_CS766.pdf)
+2. [Link to github repository](https://github.com/jakie528/Yolo5-8-in-Indoor-and-outdoor-usage) 
 
 ### [Indoor: Electronic Device Detection](#indoor-electronic-device-detection)
 
@@ -68,8 +71,6 @@ We utilized Google Colab and its NVIDIA Tesla T4 GPUs. GPUs are built with CUDA 
 ```
 
 **Pre-training on COCO:** This involves training the YOLO model on the COCO dataset before it is fine-tuned for specific tasks. This is the one that we have used in the stage of base case.
-
-~~**Fine-tuning:** After pre-training, YOLO models are often fine-tuned on specific datasets tailored to particular use cases, such as indoor object recognition or wildfire detection. This step adjusts the model's weights to better detect objects relevant to the specific application.~~
 
 ## Model Training and Result
 We selected four diverse samples and a video that would mimic real-world variability. we utilized pre-trained models from Ultralytics. Samples and a video as sources are put in the pre-trained model in the YOLOv5 and YOLOv8 separately. Then we conducted comparative performance analysis of YOLOv5 and YOLOv8 in Object Detection.
@@ -215,10 +216,6 @@ ResNet+ViT enable the model to learn the spatial information and can produce bet
 The main dataset is [HPWREN](https://www.hpwren.ucsd.edu/FIgLib).
 The mini set is [AI-Humankind](https://public.roboflow.com/object-detection/wildfire-smoke).
 
-# Links
-1. [Link to presentation slides](https://github.com/jakie528/Yolo5-8-in-Indoor-and-outdoor-usage/blob/main/Visual_Detection_CS766.pdf)
-2. [Link to github repository](https://github.com/jakie528/Yolo5-8-in-Indoor-and-outdoor-usage) 
-
 # Repository Structure
 ```
 .
@@ -227,15 +224,15 @@ The mini set is [AI-Humankind](https://public.roboflow.com/object-detection/wild
 ├── _config.yml                                                     # Jekyll settings
 ├── _layouts/                                                       # Jekyll settings
 ├── assets/                                                         # Indoor: object prediction
-├── configs/                                                        
+├── configs/                                                        # config file for running train/val pipeline in mmyolo
 │   ├── _yolov8_l_no_mask_frozen.py                                 
 │   ├── _yolov8_l_unfrozen_smoke.py                                 
 │   └── _yolov8_s_no_mask_frozen.py                                 
-├── logs_for_smoke/                                                 
-│   ├── events.out.tfevents.1713544764.elab-vulcan.149005.0         # 
-│   ├── events.out.tfevents.1713580307.elab-vulcan.149005.1         #
-│   ├── image_preds.csv
-│   └── sample_log_for_detection.ipynb
+├── logs_for_smoke/                                                 # tensorboard record + image_prediction_result for classification + result/visualize_for_mmyolo
+│   ├── events.out.tfevents.1713544764.elab-vulcan.149005.0         # tfevent: classification
+│   ├── events.out.tfevents.1713580307.elab-vulcan.149005.1         # tfevent: classification
+│   ├── image_preds.csv                                             # classification
+│   └── sample_log_for_detection.ipynb                              # mmyolo
 ├── smoke_detection.mp4
 ├── src/                                                            # Indoor: source of images and videos
 └── ultralytics_yolo.ipynb                                          # Indoor: implementation of object detection
