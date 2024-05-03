@@ -52,7 +52,7 @@ YOLO models are typically pre-trained on the `COCO dataset`, a large-scale objec
 
 ## Environment Set Up
 We utilized Google Colab and its NVIDIA Tesla T4 GPUs. GPUs are built with CUDA that can accelerate our data processing tasks and enhance model performance and efficiency. This setup accelarate the hourly computation into minutes and ensures optimal execution.
-- Available here with Colab: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/19zZqunRLepQalh7REmbcu7dlfxJ4yVL0?usp=sharing)
+- [Code available here and run on the Google Colab](https://github.com/jakie528/YOLOv5-and-YOLOv8-in-Indoor-and-Outdoor-Usage/blob/main/yolo_v5_v8.ipynb)
 
 ### Set up YOLOv5 model
 - Setup from the Ultralytics, Command: `git clone https://github.com/ultralytics/yolov5.git`,  and installing the dependencies from `requirements.txt` file.
