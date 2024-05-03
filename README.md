@@ -1,6 +1,7 @@
 # Yolo5/8 in Indoor and outdoor usage
 
-Contributors: Ziqi Liao, Xinmiao Xiong, Pin chun Lu, Yi Wen Chen
+Contributors: Ziqi Liao, Xinmiao Xiong, Pin Chun Lu, Yi Wen Chen
+
 ### [Indoor: Electronic Device Detection](#indoor-electronic-device-detection)
 
  - [Background](#background)
@@ -28,17 +29,18 @@ Contributors: Ziqi Liao, Xinmiao Xiong, Pin chun Lu, Yi Wen Chen
 ### [Discussion](#discussion)
 
 ### [Reference of Dataset](#reference-of-dataset)
-
-### [Reference](#reference)
+## [Links](#links)
+## [Repository Structure](#repository-structure)
+## [Reference](#reference)
 # Indoor: Electronic Device Detection
 
-## Background
+## Background and Motivation
 
-This section serves as our base case for comparing with the outdoor Wildfires project. To understand how YOLO usage differs between indoor and outdoor scenarios, we have tested indoor scenarios with fixed-angle cameras and first-person views. We have used YOLOv5 and YOLOv8 for this purpose.
+This project compares the effectiveness of YOLOv5 and YOLOv8 in detecting electronic devices in indoor environments. We analyze how these versions perform with fixed-angle and first-person cameras. This study also serves as a base for comparing indoor detection capabilities against outdoor scenarios, such as our Wildfires project. It helps us understand how well YOLO models adapt to different settings.
 
 ## About YOLO
 YOLO (You Only Look Once) is a state-of-the-art, real-time object detection algorithm. It treats object detection as a regression problem, using a single neural network to predict bounding boxes and class probabilities directly from full images in one evaluation. This unified architecture enables end-to-end training and real-time speeds while maintaining high average precision.
-We implement the object detection in the YOLOv5 and YOLOv8 model for comparison.
+We implement the object detection in the YOLOv5 and YOLOv8 models for comparison.
 
 
 ## Dataset Preparation
@@ -213,6 +215,31 @@ ResNet+ViT enable the model to learn the spatial information and can produce bet
 The main dataset is [HPWREN](https://www.hpwren.ucsd.edu/FIgLib).
 The mini set is [AI-Humankind](https://public.roboflow.com/object-detection/wildfire-smoke).
 
+# Links
+1. [Link to presentation slides](https://github.com/jakie528/Yolo5-8-in-Indoor-and-outdoor-usage/blob/main/Visual_Detection_CS766.pdf)
+2. [Link to github repository](https://github.com/jakie528/Yolo5-8-in-Indoor-and-outdoor-usage) 
+
+# Repository Structure
+```
+.
+├── README.md                                                       # Web page
+├── Visual_Detection_CS766.pdf                                      # Presentation slides
+├── _config.yml                                                     # Jekyll settings
+├── _layouts/                                                       # Jekyll settings
+├── assets/                                                         # Indoor: object prediction
+├── configs/                                                        
+│   ├── _yolov8_l_no_mask_frozen.py                                 
+│   ├── _yolov8_l_unfrozen_smoke.py                                 
+│   └── _yolov8_s_no_mask_frozen.py                                 
+├── logs_for_smoke/                                                 
+│   ├── events.out.tfevents.1713544764.elab-vulcan.149005.0         # 
+│   ├── events.out.tfevents.1713580307.elab-vulcan.149005.1         #
+│   ├── image_preds.csv
+│   └── sample_log_for_detection.ipynb
+├── smoke_detection.mp4
+├── src/                                                            # Indoor: source of images and videos
+└── ultralytics_yolo.ipynb                                          # Indoor: implementation of object detection
+```
 
 # Reference
 [1] ultralytics/yolov5: v7.0 - YOLOv5 SOTA Realtime Instance Segmentation. (2022, November 23). Zenodo. https://doi.org/10.5281/zenodo.7347926
