@@ -4,6 +4,7 @@ Contributors: Ziqi Liao, Xinmiao Xiong, Pin Chun Lu, Yi Wen Chen
 
 [Link to presentation slides](https://github.com/jakie528/Yolo5-8-in-Indoor-and-outdoor-usage/blob/main/Visual_Detection_CS766.pdf)
 
+[Link to the web page](https://jakie528.github.io/YOLOv5-and-YOLOv8-in-Indoor-and-Outdoor-Usage/)
 
 ### [Indoor: Electronic Device Detection](#indoor-electronic-device-detection)
 
