@@ -1,4 +1,4 @@
-# Yolo5/8 in Indoor and outdoor usage
+# Comparative Analysis of YOLOv5 and YOLOv8 for Indoor and Outdoor Object Detection
 
 Contributors: Ziqi Liao, Xinmiao Xiong, Pin Chun Lu, Yi Wen Chen
 
